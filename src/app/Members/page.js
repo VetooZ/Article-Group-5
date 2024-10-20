@@ -8,7 +8,7 @@ const Members = () => {
         <div className="bg-white dark:bg-primary absolute top-0 left-0 w-full min-h-full z-[-1]">
             <div className="mx-5 md:mx-20 mt-36">
                 <div className="block md:hidden mb-11">
-                    <div className="flex justify-center items-center text-4xl text-white font-semibold mx-10 md:col-start-3 md:col-span-2">
+                    <div className="flex justify-center items-center text-4xl dark:text-white font-semibold mx-10 md:col-start-3 md:col-span-2">
                         <Typewriter
                             options={{
                                 strings: ['Members', 'Group 5', '┌( ಠ_ಠ)┘', '(⊙_◎)'],
