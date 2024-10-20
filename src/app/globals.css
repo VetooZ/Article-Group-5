@@ -2,26 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .textshadow {
+    text-shadow: -5px 5px 2px #3b82f680;
+  }
+}
+
+.loading {
+  width: 100.8px;
+  height: 16.8px;
+  -webkit-mask: linear-gradient(90deg, #0f172a 70%, #0000 0) left/20% 100%;
+  background: linear-gradient(#0f172a 0 0) left/0% 100% no-repeat #dbdcef;
+  animation: progress-422c3u 2s infinite steps(6);
+}
+
+@keyframes progress-422c3u {
+  100% {
+    background-size: 120% 100%;
   }
 }
