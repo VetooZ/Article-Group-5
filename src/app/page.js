@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="bg-white dark:bg-primary absolute top-0 left-0 w-full min-h-full z-[-1]">
